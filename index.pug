@@ -1,0 +1,11 @@
+doctype html
+html
+	include src/ui/doc-head
+	body(onclick='handle_click()')
+		include src/ui/header
+		include src/ui/promo
+		article
+			include src/ui/why
+			include src/ui/how
+	script
+		include src/api/handle-click.js

@@ -1,0 +1,21 @@
+-
+	var data = [
+	{img:'checkbox', text: 'Заказ принимается через онлайн-форму заказа круглосуточно 24/7 или по телефону. Обычно курьер назначается и выезжает к вам в течение 10 минут после получения заявки.'},
+	{img:'compass', text: 'Вы можете в реальном времени видеть местонахождение курьера в своем личном кабинете. А также можете добавить или удалить адреса из заказа в процессе его выполнения.'},
+	{img:'mail', text: 'Получателям на каждом из адресов приходит смс с телефоном курьера, а Вам — смс о прохождении курьером каждого адреса.'},
+	{img:'like', text: 'После завершения заказа Вы можете оценить курьера.'},
+	]
+
+.how
+	.section--header.has-text-centered.is-size-4-desktop.is-size-5-tablet.is-size-6-mobile
+		| Как мы работаем
+	//.columns.is-variable
+	.columns.is-gapless
+		each obj in data
+			.column.has-text-centered
+				figure.image.is-96x96
+					img(src=`assets/in-description-${obj.img}.png`)
+				p.has-text-justified.is-size-7= obj.text
+				hr.hr.is-hidden-desktop.is-hidden-tablet
+			.column.is-narrow.has-text-centered
+				img.arrow(src='assets/in-description-arrow.png')

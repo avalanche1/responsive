@@ -1,0 +1,103 @@
+body {
+	max-width: 1024px;
+	margin: 0 auto;
+	color: black;
+}
+
+article {
+	margin: 0 3vw;
+}
+
+/*@media screen and (max-width: 768px) {*/
+/*article {*/
+/*margin: 0 auto;*/
+/*}*/
+/*}*/
+
+.header {
+	background: url("assets/background.png") round;
+	background-color: initial !important;
+}
+
+.promo {
+	padding: 0.3em 5vw;
+	background: beige;
+}
+
+.promo a {
+	color: violet;
+	text-decoration: underline;
+}
+
+.why, .how {
+	margin: 1em auto;
+}
+
+.section--header {
+	margin-bottom: 1em;
+}
+
+.why .columns {
+	margin: 0 auto;
+}
+
+hr {
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+	.why hr, .why .columns {
+		width: initial;
+	}
+}
+
+.column {
+	padding-left: 0;
+}
+
+.column.col--second {
+	flex-grow: 2;
+	padding-left: 1rem;
+	padding-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.column.col--second {
+		padding-left: 0;
+	}
+}
+
+.how .columns {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.how .column {
+	padding-right: 0;
+}
+
+.how figure {
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+	.how figure {
+		margin-bottom: 1em;
+	}
+}
+
+.how .arrow {
+	margin-top: 1.7em;
+}
+
+.how .column:last-of-type {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.how .arrow {
+		display: none;
+	}
+}
+
